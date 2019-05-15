@@ -2,7 +2,7 @@
 [![valine](https://img.shields.io/badge/valine-1.3.6-blue.svg)](https://valine.js.org/)
 [![element-ui](https://img.shields.io/badge/element-2.8.2-blue.svg)](http://element-cn.eleme.io/)
 
-[中文文档](https://github.com/JohnMaple/blog_vuepress/blob/master/README.md)
+<!-- [中文文档](https://github.com/JohnMaple/blog_vuepress/blob/master/README.md) -->
 
 ## vuepress版本为1.0.0-alpha.47
 
