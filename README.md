@@ -1,20 +1,16 @@
-[![vuepress](https://img.shields.io/badge/vuepress-1.0.0--alpha.42-blue.svg)](https://v1.vuepress.vuejs.org/)
-[![valine](https://img.shields.io/badge/valine-1.3.4-blue.svg)](https://valine.js.org/)
-[![element-ui](https://img.shields.io/badge/element-2.6.1-blue.svg)](http://element-cn.eleme.io/)
+[![vuepress](https://img.shields.io/badge/vuepress-1.0.0--alpha.47-blue.svg)](https://v1.vuepress.vuejs.org/)
+[![valine](https://img.shields.io/badge/valine-1.3.6-blue.svg)](https://valine.js.org/)
+[![element-ui](https://img.shields.io/badge/element-2.8.2-blue.svg)](http://element-cn.eleme.io/)
 
 [中文文档](https://github.com/hirCodd/vuepress-blog/blob/master/README.md)|[English](https://github.com/hirCodd/vuepress-blog/blob/master/README_en.md)
 
-## vuepress版本为1.0.0-alpha.42
+## vuepress版本为1.0.0-alpha.47
 
 ## 快速开始
 ```bash
 git clone https://github.com/JohnMaple/blog_vuepress.git
 ```
 ## 运行项目
-
-    npm install //安装依赖
-    npm run dev //运行
-
 ```bash
 # install dependencies
 npm install
@@ -27,11 +23,9 @@ npm run build
 ```
 
 ## 本地演示
-> 如果看到下面这行即说明开发运行正常
+> 如果看到下面这行即说明开发运行正常，打开浏览器，输入localhost:8080即可访问
 
     VuePress dev server listening at http://localhost:8080/
-
-> 打开浏览器，输入localhost:8080即可访问
 
 ## demo
 [demo](https://www.finen.top/)
@@ -83,4 +77,4 @@ npm run build
 Most browsers(Firefox,Chrome等)
 
 ## LiCENSE
-[MIT](https://github.com/hirCodd/vuepress-blog/blob/master/LICENSE)
+[MIT](https://github.com/JohnMaple/blog_vuepress/blob/master/README.md)
