@@ -15,6 +15,18 @@ module.exports = {
       updatePopup: true
     }],
     ['@vuepress/medium-zoom', true],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          lang = 'zh-CN'
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).fromNow()
+        }
+      }
+    ]
   ],
   themeConfig: {
     sidebarDepth: 2,  // 提取markdown中h2 和 h3 标题，显示在侧边栏上
