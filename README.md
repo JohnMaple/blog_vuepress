@@ -2,7 +2,7 @@
 [![valine](https://img.shields.io/badge/valine-1.3.6-blue.svg)](https://valine.js.org/)
 [![element-ui](https://img.shields.io/badge/element-2.8.2-blue.svg)](http://element-cn.eleme.io/)
 
-[中文文档](https://github.com/hirCodd/vuepress-blog/blob/master/README.md)|[English](https://github.com/hirCodd/vuepress-blog/blob/master/README_en.md)
+[中文文档](https://github.com/JohnMaple/blog_vuepress/blob/master/README.md)
 
 ## vuepress版本为1.0.0-alpha.47
 
@@ -66,9 +66,9 @@ npm run build
     if (element.frontmatter.post == true && element.frontmatter.tags.includes(tag)) {} // tags
 ``` 
     
-## vuePress官网文档
+## VuePress官网文档
 
-[Vuepress文档](https://v1.vuepress.vuejs.org/)
+[VuePress文档](https://v1.vuepress.vuejs.org/)
 
 ## Valine.js官网文档
 [Valine.js文档](https://valine.js.org/)
