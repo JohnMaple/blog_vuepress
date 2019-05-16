@@ -1,6 +1,11 @@
 ---
 title: HTTP协议
+description: HTTP协议是Hyper Text Transfer Protocol（超文本传输协议）的缩写,是用于从万维网（WWW:World Wide Web ）服务器传输超文本到本地浏览器的传送协议。
+featured_media: /hero.png
+date: 2018-12-25 14:30:20
+post: true
 comments: true
+humanize: false
 ---
 
 # HTTP协议 #
