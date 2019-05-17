@@ -36,29 +36,24 @@ module.exports = {
     // 这里的'/' 指的是 docs文件夹路径
     // [以 '/' 结尾的默认指向该路径下README.md文件]
     nav: [
-      { text: 'Home', link: '/' },
+      { text: '首页', link: '/' },
       {
-        text: 'Programming',
+        text: '分类',
         items: [
           { text: 'PHP', link: '/programming/php/' },
           { text: 'Python', link: '/programming/python/' },
-          { text: 'Vue', link: '/programming/vue/' },
-          { text: 'Es6', link: '/programming/es6/' },
+          { text: 'Vue', link: '/programming/web/vue/' },
+          { text: 'Es6', link: '/programming/web/es6/' },
           { text: 'Web', link: '/programming/web/' },
-        ]
-      },
-      {
-        text: 'Algorithm',
-        link: 'http://www.baidu.com'
-      },
-      {
-        text: 'Server',
-        items: [
-          { text: 'HTTP', link: '/server/http/' },
-          { text: 'Linux', link: '/server/linux/' },
-          { text: 'Docker', link: '/server/docker/' },
-          { text: 'Vagrant', link: '/server/vagrant/' },
-          { text: 'Mysql', link: '/server/mysql/' },
+          {
+            text: 'Server',
+            items: [
+              { text: 'Linux', link: '/server/linux/' },
+              { text: 'Docker', link: '/server/docker/' },
+              { text: 'Vagrant', link: '/server/vagrant/' },
+              { text: 'Mysql', link: '/server/mysql/' },
+            ]
+          },
           {
             text: 'Nosql',
             items: [
@@ -69,16 +64,83 @@ module.exports = {
           {
             text: 'Other',
             items: [
-              { text: 'Git', link: '/server/git/' },
+              { text: 'Algorithm', link: '/algorithm/' },
+              { text: 'HTTP', link: '/other/http/' },
+              { text: 'Git', link: '/other/git/' },
             ]
           },
         ]
       },
-      { text: 'Essay', link: '/essay/' },
+      { text: '标签', link: '/tags/' },
+      { text: '随笔', link: '/essay/' },
+      { text: '关于', link: '/about/' },
       { text: 'GitHub', link: 'https://github.com/JohnMaple' }
     ],
     sidebar: {
+      '/programming/php/': [
+        {
+          title: 'PHP',
+          children: [
+            '',
+          ]
+        },
+      ],
+      '/programming/python/': [
+        {
+          title: 'Python',
+          children: [
+            '',
+          ]
+        },
+      ],
+      '/programming/web/': [
+        {
+          title: '前端栈',
+          children: [
+            '',
+          ]
+        },
+      ],
       '/server/': [
+        {
+          title: 'Linux',
+          children: [
+            'linux/',
+            'linux/nginx',
+          ]
+        },
+        {
+          title: 'Docker',
+          children: [
+            'docker/',
+          ]
+        },
+        {
+          title: 'Vagrant',
+          children: [
+            'vagrant/',
+          ]
+        },
+        {
+          title: 'Mysql',
+          children: [
+            'mysql/',
+          ]
+        },
+        {
+          title: 'Redis',
+          children: [
+            'redis/',
+          ]
+        },
+        {
+          title: 'Mongo',
+          children: [
+            'mongo/',
+          ]
+        },
+      ],
+      '/other/': [
         {
           title: 'HTTP',
           children: [
@@ -86,13 +148,20 @@ module.exports = {
           ]
         },
         {
-          title: 'Linux',
+          title: 'Git',
           children: [
-            'linux/',
-            'linux/nginx',
+            'git/',
           ]
         }
       ],
+      '/algorithm/': [
+        {
+          title: '编程算法',
+          children: [
+            '',
+          ]
+        },
+      ],
     }
-  },
+  }
 }
