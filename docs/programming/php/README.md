@@ -6,5 +6,12 @@ date: 2018-12-25 15:30:20
 post: true
 comments: true
 humanize: false
+tags:
+- PHP
+- Thinkphp
+- Laravel
+- Yii
+- CI
+- Cake
 ---
 ## php

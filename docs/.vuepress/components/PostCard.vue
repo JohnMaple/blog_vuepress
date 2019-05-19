@@ -160,10 +160,10 @@ export default {
 
 .featured-media {
   position: absolute;
-  top: 12%;
+  top: 14%;
   right: 1.3rem;
   width: 20%;
-  height: 76%;
+  height: 70%;
 }
 
 .featured-media img {

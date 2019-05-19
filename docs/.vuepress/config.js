@@ -1,8 +1,11 @@
 module.exports = {
-  title: 'Evan Hunter',
+  title: 'Ethan',
   description: 'Just playing around',
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', {
+      rel: 'icon',
+      href: '/logo.png'
+    }],
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
   markdown: {
@@ -29,80 +32,125 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    sidebarDepth: 2,  // 提取markdown中h2 和 h3 标题，显示在侧边栏上
+    sidebarDepth: 2, // 提取markdown中h2 和 h3 标题，显示在侧边栏上
     lastUpdated: '上次更新',
     // 顶部导航栏
     // 单项 text：显示文字，link：指向链接
     // 这里的'/' 指的是 docs文件夹路径
     // [以 '/' 结尾的默认指向该路径下README.md文件]
-    nav: [
-      { text: '首页', link: '/' },
+    nav: [{
+        text: '首页',
+        link: '/'
+      },
       {
         text: '分类',
-        items: [
-          { text: 'PHP', link: '/programming/php/' },
-          { text: 'Python', link: '/programming/python/' },
-          { text: 'Vue', link: '/programming/web/vue/' },
-          { text: 'Es6', link: '/programming/web/es6/' },
-          { text: 'Web', link: '/programming/web/' },
+        items: [{
+            text: 'PHP',
+            link: '/programming/php/'
+          },
+          {
+            text: 'Python',
+            link: '/programming/python/'
+          },
+          {
+            text: 'Vue',
+            link: '/programming/web/vue/'
+          },
+          {
+            text: 'Es6',
+            link: '/programming/web/es6/'
+          },
+          {
+            text: 'Web',
+            link: '/programming/web/'
+          },
           {
             text: 'Server',
-            items: [
-              { text: 'Linux', link: '/server/linux/' },
-              { text: 'Docker', link: '/server/docker/' },
-              { text: 'Vagrant', link: '/server/vagrant/' },
-              { text: 'Mysql', link: '/server/mysql/' },
+            items: [{
+                text: 'Linux',
+                link: '/server/linux/'
+              },
+              {
+                text: 'Docker',
+                link: '/server/docker/'
+              },
+              {
+                text: 'Vagrant',
+                link: '/server/vagrant/'
+              },
+              {
+                text: 'Mysql',
+                link: '/server/mysql/'
+              },
             ]
           },
           {
             text: 'Nosql',
-            items: [
-              { text: 'Redis', link: '/server/redis/' },
-              { text: 'MongoDB', link: '/server/mongo/' }
+            items: [{
+                text: 'Redis',
+                link: '/server/redis/'
+              },
+              {
+                text: 'MongoDB',
+                link: '/server/mongo/'
+              }
             ]
           },
           {
             text: 'Other',
-            items: [
-              { text: 'Algorithm', link: '/algorithm/' },
-              { text: 'HTTP', link: '/other/http/' },
-              { text: 'Git', link: '/other/git/' },
+            items: [{
+                text: 'Algorithm',
+                link: '/algorithm/'
+              },
+              {
+                text: 'HTTP',
+                link: '/other/http/'
+              },
+              {
+                text: 'Git',
+                link: '/other/git/'
+              },
             ]
           },
         ]
       },
-      { text: '标签', link: '/tags/' },
-      { text: '随笔', link: '/essay/' },
-      { text: '关于', link: '/about/' },
-      { text: 'GitHub', link: 'https://github.com/JohnMaple' }
+      {
+        text: '标签',
+        link: '/tags/'
+      },
+      {
+        text: '随笔',
+        link: '/essay/'
+      },
+      {
+        text: '关于',
+        link: '/about/'
+      },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/JohnMaple'
+      }
     ],
     sidebar: {
-      '/programming/php/': [
-        {
-          title: 'PHP',
-          children: [
-            '',
-          ]
-        },
-      ],
-      '/programming/python/': [
-        {
-          title: 'Python',
-          children: [
-            '',
-          ]
-        },
-      ],
-      '/programming/web/': [
-        {
-          title: '前端栈',
-          children: [
-            '',
-          ]
-        },
-      ],
-      '/server/': [
-        {
+      '/programming/php/': [{
+        title: 'PHP',
+        children: [
+          '',
+        ]
+      }, ],
+      '/programming/python/': [{
+        title: 'Python',
+        children: [
+          '',
+        ]
+      }, ],
+      '/programming/web/': [{
+        title: '前端栈',
+        children: [
+          '',
+        ]
+      }, ],
+      '/server/': [{
           title: 'Linux',
           children: [
             'linux/',
@@ -140,8 +188,7 @@ module.exports = {
           ]
         },
       ],
-      '/other/': [
-        {
+      '/other/': [{
           title: 'HTTP',
           children: [
             'http/',
@@ -154,14 +201,12 @@ module.exports = {
           ]
         }
       ],
-      '/algorithm/': [
-        {
-          title: '编程算法',
-          children: [
-            '',
-          ]
-        },
-      ],
+      '/algorithm/': [{
+        title: '编程算法',
+        children: [
+          '',
+        ]
+      }, ],
     }
   }
 }
