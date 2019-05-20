@@ -144,7 +144,7 @@ module.exports = {
           children: [
             'algorithm',
             'verify',
-            'file_cache',
+            'file-cache',
           ]
         },
       ],
