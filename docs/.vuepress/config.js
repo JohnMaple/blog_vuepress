@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Ethan',
-  description: 'There is no royal road to learning.',// 'Just playing around',
+  description: 'There is no royal road to learning.', // 'Just playing around',
   head: [
     ['link', {
       rel: 'icon',
@@ -39,15 +39,13 @@ module.exports = {
     // 单项 text：显示文字，link：指向链接
     // 这里的'/' 指的是 docs文件夹路径
     // [以 '/' 结尾的默认指向该路径下README.md文件]
-    nav: [
-      {
+    nav: [{
         text: '首页',
         link: '/'
       },
       {
         text: '分类',
-        items: [
-          {
+        items: [{
             text: 'PHP',
             link: '/programming/php/algorithm'
           },
@@ -69,8 +67,7 @@ module.exports = {
           },
           {
             text: 'Server',
-            items: [
-              {
+            items: [{
                 text: 'Linux',
                 link: '/server/linux/'
               },
@@ -90,8 +87,7 @@ module.exports = {
           },
           {
             text: 'Nosql',
-            items: [
-              {
+            items: [{
                 text: 'Redis',
                 link: '/server/redis/'
               },
@@ -138,34 +134,27 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/programming/php/': [
-        {
-          title: 'PHP',
-          children: [
-            'algorithm',
-            'verify',
-            'file-cache',
-          ]
-        },
-      ],
-      '/programming/python/': [
-        {
-          title: 'Python',
-          children: [
-            '',
-          ]
-        },
-      ],
-      '/programming/web/': [
-        {
-          title: '前端栈',
-          children: [
-            '',
-          ]
-        },
-      ],
-      '/server/': [
-        {
+      '/programming/php/': [{
+        title: 'PHP',
+        children: [
+          'algorithm',
+          'verify',
+          'file-cache',
+        ]
+      }, ],
+      '/programming/python/': [{
+        title: 'Python',
+        children: [
+          '',
+        ]
+      }, ],
+      '/programming/web/': [{
+        title: '前端栈',
+        children: [
+          '',
+        ]
+      }, ],
+      '/server/': [{
           title: 'Linux',
           children: [
             'linux/',
@@ -203,8 +192,7 @@ module.exports = {
           ]
         },
       ],
-      '/other/': [
-        {
+      '/other/': [{
           title: 'HTTP',
           children: [
             'http/',
@@ -214,6 +202,7 @@ module.exports = {
           title: 'Git',
           children: [
             'git/',
+            'git/advanced-command',
           ]
         }
       ],
