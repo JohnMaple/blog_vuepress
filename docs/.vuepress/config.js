@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Ethan',
-  description: 'Just playing around',
+  description: 'There is no royal road to learning.',// 'Just playing around',
   head: [
     ['link', {
       rel: 'icon',
@@ -32,21 +32,24 @@ module.exports = {
     ]
   ],
   themeConfig: {
+    logo: '/logo.png',
     sidebarDepth: 2, // 提取markdown中h2 和 h3 标题，显示在侧边栏上
     lastUpdated: '上次更新',
     // 顶部导航栏
     // 单项 text：显示文字，link：指向链接
     // 这里的'/' 指的是 docs文件夹路径
     // [以 '/' 结尾的默认指向该路径下README.md文件]
-    nav: [{
+    nav: [
+      {
         text: '首页',
         link: '/'
       },
       {
         text: '分类',
-        items: [{
+        items: [
+          {
             text: 'PHP',
-            link: '/programming/php/'
+            link: '/programming/php/algorithm'
           },
           {
             text: 'Python',
@@ -66,7 +69,8 @@ module.exports = {
           },
           {
             text: 'Server',
-            items: [{
+            items: [
+              {
                 text: 'Linux',
                 link: '/server/linux/'
               },
@@ -86,7 +90,8 @@ module.exports = {
           },
           {
             text: 'Nosql',
-            items: [{
+            items: [
+              {
                 text: 'Redis',
                 link: '/server/redis/'
               },
@@ -98,10 +103,11 @@ module.exports = {
           },
           {
             text: 'Other',
-            items: [{
-                text: 'Algorithm',
-                link: '/algorithm/'
-              },
+            items: [
+              // {
+              //   text: 'Algorithm',
+              //   link: '/algorithm/'
+              // },
               {
                 text: 'HTTP',
                 link: '/other/http/'
@@ -132,25 +138,34 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/programming/php/': [{
-        title: 'PHP',
-        children: [
-          '',
-        ]
-      }, ],
-      '/programming/python/': [{
-        title: 'Python',
-        children: [
-          '',
-        ]
-      }, ],
-      '/programming/web/': [{
-        title: '前端栈',
-        children: [
-          '',
-        ]
-      }, ],
-      '/server/': [{
+      '/programming/php/': [
+        {
+          title: 'PHP',
+          children: [
+            'algorithm',
+            'verify',
+            'file_cache',
+          ]
+        },
+      ],
+      '/programming/python/': [
+        {
+          title: 'Python',
+          children: [
+            '',
+          ]
+        },
+      ],
+      '/programming/web/': [
+        {
+          title: '前端栈',
+          children: [
+            '',
+          ]
+        },
+      ],
+      '/server/': [
+        {
           title: 'Linux',
           children: [
             'linux/',
@@ -188,7 +203,8 @@ module.exports = {
           ]
         },
       ],
-      '/other/': [{
+      '/other/': [
+        {
           title: 'HTTP',
           children: [
             'http/',
@@ -201,12 +217,14 @@ module.exports = {
           ]
         }
       ],
-      '/algorithm/': [{
-        title: '编程算法',
-        children: [
-          '',
-        ]
-      }, ],
+      // '/algorithm/': [
+      //   {
+      //     title: '编程算法',
+      //     children: [
+      //       '',
+      //     ]
+      //   },
+      // ],
     }
   }
 }
