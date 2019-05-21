@@ -73,12 +73,12 @@ export default {
     handleSizeChange: function(size) {
       this.pageSize = size;
       this.pageList = this.getPageList();
-      console.log(this.pageSize); //每页下拉显示数据
+      // console.log(this.pageSize); //每页下拉显示数据
     },
     handleCurrentChange: function(current_page) {
       this.currentPage = current_page;
       this.pageList = this.getPageList();
-      console.log(this.currentPage); //点击第几页
+      // console.log(this.pageList); //点击第几页
     },
     filterPostsList() {
       this.pages.forEach(element => {
@@ -91,20 +91,22 @@ export default {
           );
           element.sortDate = this.formatDate(element.frontmatter.date);
           this.lists.push(element);
-          this.pageList = this.getPageList();
         }
       });
+
       // 通过时间进行排序
-      this.pageList.sort(this.compare("sortDate"));
+      this.lists.sort(this.compare("sortDate"));
+      this.pageList = this.getPageList();
+
       // 总记录数
-      this.total = this.pageList.length;
+      this.total = this.lists.length;
     },
     /**
      * 获取分页数据
      */
     getPageList() {
-      let start = this.currentPage == 1 ? 0 : this.currentPage;
-      let offset = this.currentPage + this.pageSize;
+      let start = (this.currentPage - 1) * this.pageSize;
+      let offset = this.currentPage * this.pageSize;
       return this.lists.slice(start, offset);
     },
     /**

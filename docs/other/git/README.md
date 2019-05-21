@@ -36,12 +36,27 @@ git是一个分布式版本控制系统，没有中心服务器，每个人的�
 ### 配置
 使用下面两条命令对当前电脑进行身份设置
 
-```yml
+``` yaml
 git config --global user.name "username"
 git config --global user.email "youremail"
 ```
 
 > 这里的<font color=red>username</font>可以是github的用户名或随便设置，<font color=red>email</font>可以是github注册邮箱或随便设置
+
+### 配置ssh-key
+使用ssh 克隆代码，需要配置ssh-key，检查用户目录下有没有id_rsa 和 id_rsa.pub，如果没有这两个文件就使用下面的这个命令生成密钥。
+
+```
+ssh-keygen -t rsa –C "youremail@example.com"
+```
+
+#### github设置ssh-key
+登录github，打开settings的SSH and GPG keys，选择New SSH key就可以填充SSH key的相关信息。
+
+#### git服务器设置ssh-key
+将本地生成的id_rsa.pub内容追加到git服务器git用户的~/.ssh/authorized_keys
+
+>如果你不想在使用密钥时输入口令，将其留空即可
 
 ### git init （初始本地仓库）
 创建一个空的Git仓库或重新初始化一个现有仓库
@@ -56,7 +71,7 @@ git config --global user.email "youremail"
 将文件内容添加到索引(将修改添加到暂存区)。也就是将要提交的文件的信息添加到索引库中。
 >`git add <path>`
 
-```yaml
+``` yaml
 $ git add .  # 将所有修改添加到暂存区
 $ git add *  # Ant风格添加修改
 $ git add *Controller   # 将以Controller结尾的文件的所有修改添加到暂存区
@@ -70,7 +85,8 @@ $ git add Hello?   # 将以Hello开头后面只有一位的文件的修改提交
 
 ### git commit （提交代码到本地仓库）
 用于将更改记录(提交)到存储库。将索引的当前内容与描述更改的用户和日志消息一起存储在新的提交中。
-```yaml
+
+``` yaml
 $ git commit -m "the commit message"
 ```
 >这里的<font color=red>-m</font>就是你提交的注释，记得以后写一定要使用注释！这是一个好习惯！
@@ -80,7 +96,8 @@ $ git commit -m "the commit message"
 
 ### git diff （比较两次修改的差异）
 用于显示提交和工作树等之间的更改。此命令比较的是工作目录中当前文件和暂存区域快照之间的差异,也就是修改之后还没有暂存起来的变化内容。
-```yaml
+
+``` yaml
 git diff <file> # 比较当前文件和暂存区文件差异 git diff
 
 git diff <id1><id1><id2> # 比较两次提交之间的差异
@@ -108,11 +125,37 @@ git diff --stat # 仅仅比较统计信息原文出自【易百教程】，商�
 ### git reset （版本回滚）
 用于将当前HEAD复位到指定状态。一般用于撤消之前的一些操作(如：git add,git commit等)。
 
-```yaml
+``` yaml
 git reset --hard a0ca311
 git reset --hard HEAD^
 git reset --hard HEAD~50
 ```
 
+### git push （推送远端）
+用于将本地分支的更新，推送到远程主机
+``` yml
+git push -u origin master
+git push origin master
+```
+> 如果当前分支与多个主机存在追踪关系，则可以使用 <font color=red>-u</font> 选项指定一个默认主机，这样后面就可以不加任何参数使用`git push`
 
 
+
+### git pull （拉取远端）
+取回远程主机某个分支的更新，再与本地的指定分支合并
+`git pull <远程主机名> <远程分支名>:<本地分支名>`
+``` yml
+git pull    # 如果当前分支只有一个追踪分支，连远程主机名都可以省略
+git pull origin next:master   # 要取回origin主机的next分支，与本地的master分支合并
+git pull origin next    # 如果远程分支(next)要与当前分支合并，则冒号后面的部分可以省略
+
+# 等效下面两句命令
+git fetch origin
+git merge origin/next
+
+git pull origin   # 如果当前分支与远程分支存在追踪关系，git pull就可以省略远程分支名
+```
+> git clone 克隆时，本地分支默认与远程主机的同名分支，建立追踪关系
+
+## 更多命令
+[git 命令详解](https://www.yiibai.com/git)

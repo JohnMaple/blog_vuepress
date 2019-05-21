@@ -23,11 +23,7 @@
         </div>
 
         <el-timeline :reverse="reverse">
-          <el-timeline-item
-            :timestamp="item.frontmatter.postTime"
-            placement="top"
-            v-for="item in tagsPost"
-          >
+          <el-timeline-item :timestamp="item.postTime" placement="top" v-for="item in tagsPost">
             <el-card shadow="hover">
               <div class="post-title">
                 <router-link :to="item.regularPath">{{ item.frontmatter.title }}</router-link>
@@ -107,7 +103,7 @@ export default {
           element.frontmatter.postDate = this.formatDate(
             element.frontmatter.date
           );
-          element.frontmatter.postTime = this.formatDate(
+          element.postTime = this.formatDate(
             element.frontmatter.date,
             "YYYY-MM-DD"
           );
@@ -134,9 +130,10 @@ export default {
         var val1 = obj1[pro];
         var val2 = obj2[pro];
         if (val1 < val2) {
-          //正序
+          // 正序
           return 1;
         } else if (val1 > val2) {
+          // 倒序
           return -1;
         } else {
           return 0;

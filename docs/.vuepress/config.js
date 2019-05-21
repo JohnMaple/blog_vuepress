@@ -40,98 +40,98 @@ module.exports = {
     // 这里的'/' 指的是 docs文件夹路径
     // [以 '/' 结尾的默认指向该路径下README.md文件]
     nav: [{
-        text: '首页',
-        link: '/'
+      text: '首页',
+      link: '/'
+    },
+    {
+      text: '分类',
+      items: [{
+        text: 'PHP',
+        link: '/programming/php/algorithm'
       },
       {
-        text: '分类',
+        text: 'Python',
+        link: '/programming/python/'
+      },
+      {
+        text: 'Vue',
+        link: '/programming/web/vue/'
+      },
+      {
+        text: 'Es6',
+        link: '/programming/web/es6/'
+      },
+      {
+        text: 'Web',
+        link: '/programming/web/'
+      },
+      {
+        text: 'Server',
         items: [{
-            text: 'PHP',
-            link: '/programming/php/algorithm'
-          },
-          {
-            text: 'Python',
-            link: '/programming/python/'
-          },
-          {
-            text: 'Vue',
-            link: '/programming/web/vue/'
-          },
-          {
-            text: 'Es6',
-            link: '/programming/web/es6/'
-          },
-          {
-            text: 'Web',
-            link: '/programming/web/'
-          },
-          {
-            text: 'Server',
-            items: [{
-                text: 'Linux',
-                link: '/server/linux/'
-              },
-              {
-                text: 'Docker',
-                link: '/server/docker/'
-              },
-              {
-                text: 'Vagrant',
-                link: '/server/vagrant/'
-              },
-              {
-                text: 'Mysql',
-                link: '/server/mysql/'
-              },
-            ]
-          },
-          {
-            text: 'Nosql',
-            items: [{
-                text: 'Redis',
-                link: '/server/redis/'
-              },
-              {
-                text: 'MongoDB',
-                link: '/server/mongo/'
-              }
-            ]
-          },
-          {
-            text: 'Other',
-            items: [
-              // {
-              //   text: 'Algorithm',
-              //   link: '/algorithm/'
-              // },
-              {
-                text: 'HTTP',
-                link: '/other/http/'
-              },
-              {
-                text: 'Git',
-                link: '/other/git/'
-              },
-            ]
-          },
+          text: 'Linux',
+          link: '/server/linux/'
+        },
+        {
+          text: 'Docker',
+          link: '/server/docker/'
+        },
+        {
+          text: 'Vagrant',
+          link: '/server/vagrant/'
+        },
+        {
+          text: 'Mysql',
+          link: '/server/mysql/'
+        },
         ]
       },
       {
-        text: '标签',
-        link: '/tags/'
+        text: 'Nosql',
+        items: [{
+          text: 'Redis',
+          link: '/server/redis/'
+        },
+        {
+          text: 'MongoDB',
+          link: '/server/mongo/'
+        }
+        ]
       },
       {
-        text: '随笔',
-        link: '/essay/'
+        text: 'Other',
+        items: [
+          // {
+          //   text: 'Algorithm',
+          //   link: '/algorithm/'
+          // },
+          {
+            text: 'HTTP',
+            link: '/other/http/'
+          },
+          {
+            text: 'Git',
+            link: '/other/git/'
+          },
+        ]
       },
-      {
-        text: '关于',
-        link: '/about/'
-      },
-      {
-        text: 'GitHub',
-        link: 'https://github.com/JohnMaple'
-      }
+      ]
+    },
+    {
+      text: '标签',
+      link: '/tags/'
+    },
+    {
+      text: '随笔',
+      link: '/essay/'
+    },
+    {
+      text: '关于',
+      link: '/about/'
+    },
+    {
+      text: 'GitHub',
+      link: 'https://github.com/JohnMaple'
+    }
     ],
     sidebar: {
       '/programming/php/': [{
@@ -141,70 +141,93 @@ module.exports = {
           'verify',
           'file-cache',
         ]
-      }, ],
+      },],
       '/programming/python/': [{
         title: 'Python',
         children: [
-          '',
+          'virtualenv',
+          {
+            title: 'Django',   // 必要的
+            children: [
+              'django/urls',
+              'django/templates_1',
+              'django/templates_2',
+              'django/templates_3',
+              'django/templates_4',
+              'django/templates_5',
+              'django/database_1',
+              'django/database_2',
+              'django/database_3',
+            ]
+          },
+          {
+            title: 'Falsk',
+            children: [
+              'flask/'
+            ]
+          },
         ]
-      }, ],
+      },],
       '/programming/web/': [{
         title: '前端栈',
         children: [
           '',
         ]
-      }, ],
+      },],
       '/server/': [{
-          title: 'Linux',
-          children: [
-            'linux/',
-            'linux/nginx',
-          ]
-        },
-        {
-          title: 'Docker',
-          children: [
-            'docker/',
-          ]
-        },
-        {
-          title: 'Vagrant',
-          children: [
-            'vagrant/',
-          ]
-        },
-        {
-          title: 'Mysql',
-          children: [
-            'mysql/',
-          ]
-        },
-        {
-          title: 'Redis',
-          children: [
-            'redis/',
-          ]
-        },
-        {
-          title: 'Mongo',
-          children: [
-            'mongo/',
-          ]
-        },
+        title: 'Linux',
+        children: [
+          'linux/',
+          'linux/nginx',
+          'linux/centos7-firewall',
+          'linux/specially-command',
+        ]
+      },
+      {
+        title: 'Docker',
+        children: [
+          'docker/',
+        ]
+      },
+      {
+        title: 'Vagrant',
+        children: [
+          'vagrant/',
+        ]
+      },
+      {
+        title: 'Mysql',
+        children: [
+          'mysql/',
+        ]
+      },
+      {
+        title: 'Redis',
+        children: [
+          'redis/',
+        ]
+      },
+      {
+        title: 'Mongo',
+        children: [
+          'mongo/',
+        ]
+      },
       ],
       '/other/': [{
-          title: 'HTTP',
-          children: [
-            'http/',
-          ]
-        },
-        {
-          title: 'Git',
-          children: [
-            'git/',
-            'git/advanced-command',
-          ]
-        }
+        title: 'HTTP',
+        children: [
+          'http/',
+          'http/tcp',
+        ]
+      },
+      {
+        title: 'Git',
+        children: [
+          'git/',
+          'git/advanced-command',
+        ]
+      }
       ],
       // '/algorithm/': [
       //   {
