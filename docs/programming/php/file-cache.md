@@ -2,7 +2,7 @@
 title: PHP文件缓存
 description: PHP文件缓存类，用于文件缓存
 featured_media: /icons/php.png
-date: 2017-01-05 15:30:20
+date: 2017-08-05 15:30:20
 post: true
 comments: true
 humanize: false

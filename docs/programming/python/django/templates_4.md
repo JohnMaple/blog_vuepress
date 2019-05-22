@@ -2,7 +2,7 @@
 title: Django 模板结构优化
 description: 
 featured_media: /icons/django.png
-date: 2018-08-18 20:50:18
+date: 2018-06-22 20:50:18
 post: true
 comments: true
 humanize: false

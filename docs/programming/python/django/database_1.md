@@ -2,7 +2,7 @@
 title: Django 操作数据库-原生SQL初体验
 description: 
 featured_media: /icons/django.png
-date: 2018-08-20 14:30:58
+date: 2018-06-27 14:30:58
 post: true
 comments: true
 humanize: false

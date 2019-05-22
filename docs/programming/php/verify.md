@@ -2,7 +2,7 @@
 title: PHP验证类-常用数据安全验证
 description: PHP验证类，验证数据的安全性，一切前端的提交到服务端的数据都是不安全的，所以需要服务器对各种数据进行验证。
 featured_media: /icons/php.png
-date: 2017-04-20 20:12:35
+date: 2017-07-28 20:12:35
 post: true
 comments: true
 humanize: false

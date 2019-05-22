@@ -2,7 +2,7 @@
 title: Django 创建和映射ORM模型到数据库
 description: 
 featured_media: /icons/django.png
-date: 2018-08-22 16:40:28
+date: 2018-06-29 16:40:28
 post: true
 comments: true
 humanize: false

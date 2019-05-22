@@ -2,12 +2,12 @@
 title: TCP传输控制协议
 description: TCP（Transmission Control Protocol 传输控制协议）是一种面向连接的、可靠的、基于字节流的传输层通信协议，由IETF的RFC 793定义。
 featured_media: /icons/http.png
-date: 2017-04-15 10:20:15
+date: 2018-04-15 10:20:15
 post: true
 comments: true
 humanize: false
 tags:
-- Tcp
+- TCP
 - HTTP
 ---
 

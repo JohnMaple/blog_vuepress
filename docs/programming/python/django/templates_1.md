@@ -2,7 +2,7 @@
 title: Django 模板标签详解
 description: 
 featured_media: /icons/django.png
-date: 2018-08-17 14:10:38
+date: 2018-06-17 14:10:38
 post: true
 comments: true
 humanize: false

@@ -2,7 +2,7 @@
 title: Python virtualenv 虚拟环境搭建
 description: pip, virtualenv, fabric通称为pythoner的三大神器
 featured_media: /icons/python.png
-date: 2018-08-13 10:27:56
+date: 2018-05-13 10:27:56
 post: true
 comments: true
 humanize: false

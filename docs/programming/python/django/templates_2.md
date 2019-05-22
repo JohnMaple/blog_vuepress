@@ -2,7 +2,7 @@
 title: Django 模板过滤器详解
 description: 
 featured_media: /icons/django.png
-date: 2018-08-17 16:20:48
+date: 2018-06-19 16:20:48
 post: true
 comments: true
 humanize: false

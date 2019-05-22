@@ -2,7 +2,7 @@
 title: Django 模板中加载静态文件
 description: 
 featured_media: /icons/django.png
-date: 2018-08-19 22:10:58
+date: 2018-06-24 22:10:58
 post: true
 comments: true
 humanize: false
