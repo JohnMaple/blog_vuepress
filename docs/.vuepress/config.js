@@ -94,10 +94,10 @@ module.exports = {
               text: 'Redis',
               link: '/server/redis/'
             },
-            {
-              text: 'MongoDB',
-              link: '/server/mongo/'
-            }
+            // {
+            //   text: 'MongoDB',
+            //   link: '/server/mongo/'
+            // }
           ]
         },
         {
@@ -237,6 +237,8 @@ module.exports = {
           title: 'Docker',
           children: [
             'docker/',
+            'docker/dockerfile',
+            'docker/docker-compose',
           ]
         },
         {
@@ -257,12 +259,12 @@ module.exports = {
             'redis/',
           ]
         },
-        {
-          title: 'Mongo',
-          children: [
-            'mongo/',
-          ]
-        },
+        // {
+        //   title: 'Mongo',
+        //   children: [
+        //     'mongo/',
+        //   ]
+        // },
       ],
       '/other/': [
         {
