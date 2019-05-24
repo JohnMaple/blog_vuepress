@@ -14,6 +14,8 @@ tags:
 # TCP（传输控制协议）
 TCP（Transmission Control Protocol 传输控制协议）是一种面向连接的、可靠的、基于字节流的传输层通信协议，由`IETF`的`RFC 793`定义。在简化的计算机网络OSI模型中，它完成第四层传输层所指定的功能，用户数据报协议（`UDP`）是同一层内，另一个重要的传输协议。在因特网协议族（Internet protocol suite）中，TCP层是位于IP层之上，应用层之下的中间层。不同主机的应用层之间经常需要可靠的、像管道一样的连接，但是IP层不提供这样的流机制，而是提供不可靠的包交换。
 
+[详解](https://juejin.im/post/5b29d2c4e51d4558b80b1d8c)
+
 ## 连接建立（三次握手）
 ### 三次握手
 - client发送一个SYN(J)包给server，然后等待server的ACK回复，进入SYN-SENT状态。ps: SYN为synchronize的缩写，ACK为acknowledgment的缩写。

@@ -251,12 +251,19 @@ module.exports = {
           title: 'Mysql',
           children: [
             'mysql/',
+            'mysql/foreign-key',
+            'mysql/invalid-index',
+            'mysql/optimization',
+            'mysql/counter-pressure',
           ]
         },
         {
           title: 'Redis',
           children: [
             'redis/',
+            'redis/queue',
+            'redis/session',
+            'redis/lock',
           ]
         },
         // {
