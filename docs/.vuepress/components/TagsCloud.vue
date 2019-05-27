@@ -169,15 +169,16 @@ export default {
 
 .post-title a {
   font-size: 1.25rem;
+  text-decoration: none !important;
 }
 
 .post-title a::before {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 96%;
   height: 2px;
   bottom: 0;
-  left: 0;
+  left: 4%;
   background-color: #258fb8;
   visibility: hidden;
   -webkit-transform: scaleX(0);
